@@ -35,9 +35,8 @@ class LoginVC: UIViewController
             {
                 
                 print("login successful")
-                let storyboard = UIStoryboard(name: "loginvc", bundle: nil)
-                let vc = storyboard.instantiateViewControllerWithIdentifier("MainScreen")
-                self.presentViewController(vc, animated: true, completion: nil)
+                
+                
             }
             else
             {

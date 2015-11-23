@@ -67,32 +67,34 @@ class RegisterVC: UIViewController
         }
         else
         {
-            myMethod()
+            // register the user
+            let user = PFUser()
+            user.username = self.usernameTF.text
+            user.password = self.passwordTF.text
+            user.email = self.emailTF.text
+            // other fields can be set just like with PFObject
+            self.theSpinner.startAnimating()
+            //non blocking asyc call
+            user.signUpInBackgroundWithBlock {
+                (succeeded: Bool, error: NSError?) -> Void in
+                if let error = error
+                {
+                    _ = error.userInfo["error"] as? NSString
+                    // Show the errorString somewhere and let the user try again.
+                } else
+                {
+                    self.theSpinner.stopAnimating()
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                }
+            }
+
             //register the user
             //see: https://www.parse.com/docs/ios/guide#users-signing-up
         }
         }
+   
     
-    func myMethod() {
-        let user = PFUser()
-        user.username = self.usernameTF.text
-        user.password = self.passwordTF.text
-        user.email = self.emailTF.text
-        // other fields can be set just like with PFObject
-        
-        
-        user.signUpInBackgroundWithBlock {
-            (succeeded: Bool, error: NSError?) -> Void in
-            if let error = error {
-                _ = error.userInfo["error"] as? NSString
-                // Show the errorString somewhere and let the user try again.
-            } else
-            {
-                self.dismissViewControllerAnimated(true, completion: nil)
-            }
-        }
-    }
-
+    @IBOutlet weak var theSpinner: UIActivityIndicatorView!
     
     @IBAction func cancelButtonPressed(sender: AnyObject)
     {

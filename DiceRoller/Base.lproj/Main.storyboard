@@ -58,8 +58,14 @@
                                 <rect key="frame" x="20" y="219" width="335" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MVd-Gy-UTk">
+                                <rect key="frame" x="177" y="257" width="20" height="20"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.89338596204188481" green="0.89338596204188481" blue="0.89338596204188481" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -69,6 +75,7 @@
                         <outlet property="confirmPasswordTF" destination="1q8-on-Fvj" id="P6X-7V-j6e"/>
                         <outlet property="emailTF" destination="vvf-FL-qMN" id="988-KX-Ppp"/>
                         <outlet property="passwordTF" destination="26Q-A2-xCA" id="esY-Yy-UcF"/>
+                        <outlet property="theSpinner" destination="MVd-Gy-UTk" id="OVf-uw-FCK"/>
                         <outlet property="usernameTF" destination="IeT-AI-g5T" id="vX1-Fo-MD7"/>
                     </connections>
                 </viewController>
@@ -140,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="-306.5" y="327.5"/>
         </scene>
-        <!--MainTVC-->
+        <!--RollHistory-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainTVC" customModule="DiceRoller" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainScreen" title="RollHistory" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainTVC" customModule="DiceRoller" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
