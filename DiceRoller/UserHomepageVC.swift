@@ -10,13 +10,14 @@ import UIKit
 
 class UserHomepageVC: UIViewController
 {
-
+    @IBOutlet weak var UserIDLabel: UILabel!
     @IBOutlet weak var UserLabel: UILabel!
     override func viewDidLoad() {
         
         super.viewDidLoad()
             
        UserLabel.text = PhoneCore.username
+        UserIDLabel.text! = "User ID is: \(PhoneCore.userid)"
         // Do any additional setup after loading the view.
     }
 
