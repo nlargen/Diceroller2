@@ -34,7 +34,7 @@ class LoginVC: UIViewController
                 (user: PFUser?, error: NSError?) -> Void in
                 if user != nil
                 {
-                    PhoneCore.userid = ("\(user!.objectId)")
+                    PhoneCore.userid = user!.objectId!
                     print("login successful")
                     let uhvc = self.storyboard?.instantiateViewControllerWithIdentifier("UserHomepageVC") as!UserHomepageVC
                     self.presentViewController(uhvc, animated: true, completion: nil)
