@@ -84,29 +84,29 @@
             <point key="canvasLocation" x="-306.5" y="-381.5"/>
         </scene>
         <!--User HomepageVC-->
-        <scene sceneID="98C-07-gDH">
+        <scene sceneID="4bB-7J-F5U">
             <objects>
-                <viewController storyboardIdentifier="UserHomepage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k2Y-HB-PPj" customClass="UserHomepageVC" customModule="DiceRoller" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserHomepageVC" id="ZS6-5I-p2v" customClass="UserHomepageVC" customModule="DiceRoller" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bOU-X9-68t"/>
-                        <viewControllerLayoutGuide type="bottom" id="iFB-ej-UpM"/>
+                        <viewControllerLayoutGuide type="top" id="nHI-Cc-s60"/>
+                        <viewControllerLayoutGuide type="bottom" id="O5e-KP-0iz"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ml2-eM-omM">
+                    <view key="view" contentMode="scaleToFill" id="TDa-yT-ArV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cru-Mt-IFN">
-                                <rect key="frame" x="0.0" y="15" width="375" height="44"/>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9Y-1P-qQ9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <animations/>
                                 <items>
-                                    <navigationItem title="Welcome:" id="pSN-i8-vjz"/>
+                                    <navigationItem title="Welcome: " id="UyT-S5-eCP"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiL-Bj-9Kt">
-                                <rect key="frame" x="235" y="28" width="108" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLw-yp-zhD">
+                                <rect key="frame" x="239" y="31" width="42" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -115,14 +115,12 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="Titlebar" destination="Cru-Mt-IFN" id="X3t-Mj-2FK"/>
-                        <outlet property="UserLabel" destination="kiL-Bj-9Kt" id="gve-AG-ZdD"/>
-                        <outlet property="title" destination="pSN-i8-vjz" id="0bN-gR-JS0"/>
+                        <outlet property="UserLabel" destination="HLw-yp-zhD" id="jQ8-cd-QfP"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="E3H-MK-f05" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bo7-nj-jv5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88.5" y="-381.5"/>
+            <point key="canvasLocation" x="90.5" y="-381.5"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="i71-J1-VSX">
@@ -148,7 +146,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="login" id="TBn-eE-i5x">
                                             <connections>
-                                                <action selector="loginButtonPressed:" destination="7N8-lK-14g" id="4a5-xM-1Za"/>
+                                                <action selector="LoginButtonP:" destination="7N8-lK-14g" id="y8I-Wr-bet"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>

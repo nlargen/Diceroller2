@@ -25,27 +25,29 @@ class LoginVC: UIViewController
         self.usernameTF.becomeFirstResponder()
     }
     
-    @IBAction func loginButtonPressed(sender: AnyObject)
+    @IBAction func LoginButtonP(sender: AnyObject)
     {
         PhoneCore.username = usernameTF.text!
         PhoneCore.password = passwordTF.text!
-        PFUser.logInWithUsernameInBackground(PhoneCore.username, password: PhoneCore.password) {
-            (user: PFUser?, error: NSError?) -> Void in
-            if user != nil
+        PFUser.logInWithUsernameInBackground(PhoneCore.username, password: PhoneCore.password)
             {
-                
-                //print("login successful")
-                let uhvc = self.storyboard?.instantiateViewControllerWithIdentifier("UserHomepage") as!UserHomepageVC
-                self.presentViewController(uhvc, animated: true, completion: nil)
-                
-                
-            }
-            else
-            {
-                print("login failed")
-            }
+                (user: PFUser?, error: NSError?) -> Void in
+                if user != nil
+                {
+                    print("login successful")
+                    let uhvc = self.storyboard?.instantiateViewControllerWithIdentifier("UserHomepageVC") as!UserHomepageVC
+                    self.presentViewController(uhvc, animated: true, completion: nil)
+                    
+                }
+                else
+                {
+                    print("login failed")
+                }
         }
+
     }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

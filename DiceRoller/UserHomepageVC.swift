@@ -8,7 +8,8 @@
 
 import UIKit
 
-class UserHomepageVC: UIViewController {
+class UserHomepageVC: UIViewController
+{
 
     @IBOutlet weak var UserLabel: UILabel!
     override func viewDidLoad() {
