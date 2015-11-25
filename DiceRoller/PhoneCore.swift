@@ -11,4 +11,6 @@ import UIKit
 class PhoneCore: NSObject
 {
     static var theRowData : [String]!
+    static var username = ""
+    static var password = ""
 }

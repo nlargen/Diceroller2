@@ -60,15 +60,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MVd-Gy-UTk">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="MVd-Gy-UTk">
                                 <rect key="frame" x="177" y="257" width="20" height="20"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.89338596204188481" green="0.89338596204188481" blue="0.89338596204188481" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.6267665226233623" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.22601600917189613" green="1" blue="0.25120891132650902" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -82,6 +82,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9o4-Q2-ti2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-306.5" y="-381.5"/>
+        </scene>
+        <!--User HomepageVC-->
+        <scene sceneID="98C-07-gDH">
+            <objects>
+                <viewController storyboardIdentifier="UserHomepage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k2Y-HB-PPj" customClass="UserHomepageVC" customModule="DiceRoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bOU-X9-68t"/>
+                        <viewControllerLayoutGuide type="bottom" id="iFB-ej-UpM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ml2-eM-omM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cru-Mt-IFN">
+                                <rect key="frame" x="0.0" y="15" width="375" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Welcome:" id="pSN-i8-vjz"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiL-Bj-9Kt">
+                                <rect key="frame" x="235" y="28" width="108" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Titlebar" destination="Cru-Mt-IFN" id="X3t-Mj-2FK"/>
+                        <outlet property="UserLabel" destination="kiL-Bj-9Kt" id="gve-AG-ZdD"/>
+                        <outlet property="title" destination="pSN-i8-vjz" id="0bN-gR-JS0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E3H-MK-f05" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.5" y="-381.5"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="i71-J1-VSX">

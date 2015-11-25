@@ -27,14 +27,16 @@ class LoginVC: UIViewController
     
     @IBAction func loginButtonPressed(sender: AnyObject)
     {
-        let username = usernameTF.text!
-        let password = passwordTF.text!
-        PFUser.logInWithUsernameInBackground(username, password: password) {
+        PhoneCore.username = usernameTF.text!
+        PhoneCore.password = passwordTF.text!
+        PFUser.logInWithUsernameInBackground(PhoneCore.username, password: PhoneCore.password) {
             (user: PFUser?, error: NSError?) -> Void in
             if user != nil
             {
                 
-                print("login successful")
+                //print("login successful")
+                let uhvc = self.storyboard?.instantiateViewControllerWithIdentifier("UserHomepage") as!UserHomepageVC
+                self.presentViewController(uhvc, animated: true, completion: nil)
                 
                 
             }

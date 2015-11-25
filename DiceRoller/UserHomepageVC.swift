@@ -10,9 +10,12 @@ import UIKit
 
 class UserHomepageVC: UIViewController {
 
+    @IBOutlet weak var UserLabel: UILabel!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+            
+       UserLabel.text = PhoneCore.username
         // Do any additional setup after loading the view.
     }
 
