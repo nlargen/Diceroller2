@@ -48,7 +48,7 @@
 		CE64BD1BBEC82AE0F9AB6E6D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2052FA65CA45B0CC1BD3C8 /* Pods.framework */; };
 		F70E14221C0D5D5300C80229 /* customRollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70E14211C0D5D5300C80229 /* customRollCell.swift */; };
 		F72BD4471C02C05400759B76 /* parse-library-1.10.0 in Resources */ = {isa = PBXBuildFile; fileRef = F72BD4461C02C05400759B76 /* parse-library-1.10.0 */; };
-		F7C6B1B81C03B58F0031C7F5 /* UserHomepageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6B1B71C03B58F0031C7F5 /* UserHomepageVC.swift */; };
+		F7D005571C0D61B100A9DF4E /* UserHomepageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D005561C0D61B100A9DF4E /* UserHomepageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,7 +136,7 @@
 		C238ECD8D753CC113BFC5B3E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F70E14211C0D5D5300C80229 /* customRollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customRollCell.swift; sourceTree = "<group>"; };
 		F72BD4461C02C05400759B76 /* parse-library-1.10.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "parse-library-1.10.0"; sourceTree = "<group>"; };
-		F7C6B1B71C03B58F0031C7F5 /* UserHomepageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHomepageVC.swift; sourceTree = "<group>"; };
+		F7D005561C0D61B100A9DF4E /* UserHomepageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHomepageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,8 +261,8 @@
 				68A764691BB5D9260007B18A /* LaunchScreen.storyboard */,
 				68A7646C1BB5D9260007B18A /* Info.plist */,
 				68B011F91BF3E1FF00D5DA54 /* PhoneCore.swift */,
-				F7C6B1B71C03B58F0031C7F5 /* UserHomepageVC.swift */,
 				F70E14211C0D5D5300C80229 /* customRollCell.swift */,
+				F7D005561C0D61B100A9DF4E /* UserHomepageVC.swift */,
 			);
 			path = DiceRoller;
 			sourceTree = "<group>";
@@ -512,10 +512,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				68B011FA1BF3E1FF00D5DA54 /* PhoneCore.swift in Sources */,
+				F7D005571C0D61B100A9DF4E /* UserHomepageVC.swift in Sources */,
 				68D4EE3A1BFFBABE0003E3B2 /* LoginVC.swift in Sources */,
 				68D4EE3C1BFFBD310003E3B2 /* RegisterVC.swift in Sources */,
 				F70E14221C0D5D5300C80229 /* customRollCell.swift in Sources */,
-				F7C6B1B81C03B58F0031C7F5 /* UserHomepageVC.swift in Sources */,
 				68A764611BB5D9260007B18A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

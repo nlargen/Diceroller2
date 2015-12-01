@@ -17,6 +17,7 @@ class LoginVC: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -34,7 +35,8 @@ class LoginVC: UIViewController
                 (user: PFUser?, error: NSError?) -> Void in
                 if user != nil
                 {
-                    PhoneCore.userid = user!.objectId!
+                    PhoneCore.currentUser = user
+                    
                     print("login successful")
                     let uhvc = self.storyboard?.instantiateViewControllerWithIdentifier("UserHomepageVC") as! UserHomepageVC
                     self.presentViewController(uhvc, animated: true, completion: nil)
@@ -42,7 +44,7 @@ class LoginVC: UIViewController
                 }
                 else
                 {
-                    print("login failed")
+                    PhoneCore.showAlert("Login Error", message: "\(error!.userInfo["error"]!)", presentingViewController: self, onScreenDelay: 2)
                 }
         }
 
