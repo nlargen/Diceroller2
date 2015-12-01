@@ -42,13 +42,11 @@
 		68A764881BB5D9260007B18A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A764871BB5D9260007B18A /* ExtensionDelegate.swift */; };
 		68A7648A1BB5D9260007B18A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A764891BB5D9260007B18A /* NotificationController.swift */; };
 		68A7648C1BB5D9260007B18A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A7648B1BB5D9260007B18A /* Assets.xcassets */; };
-		68B011F61BF3D93B00D5DA54 /* MainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B011F51BF3D93B00D5DA54 /* MainTVC.swift */; };
 		68B011FA1BF3E1FF00D5DA54 /* PhoneCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B011F91BF3E1FF00D5DA54 /* PhoneCore.swift */; };
-		68B011FE1BF6848600D5DA54 /* rollDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B011FD1BF6848600D5DA54 /* rollDetailCell.swift */; };
-		68B012001BFA73ED00D5DA54 /* RollsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B011FF1BFA73ED00D5DA54 /* RollsTVC.swift */; };
 		68D4EE3A1BFFBABE0003E3B2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D4EE391BFFBABE0003E3B2 /* LoginVC.swift */; };
 		68D4EE3C1BFFBD310003E3B2 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D4EE3B1BFFBD310003E3B2 /* RegisterVC.swift */; };
 		CE64BD1BBEC82AE0F9AB6E6D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2052FA65CA45B0CC1BD3C8 /* Pods.framework */; };
+		F70E14221C0D5D5300C80229 /* customRollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70E14211C0D5D5300C80229 /* customRollCell.swift */; };
 		F72BD4471C02C05400759B76 /* parse-library-1.10.0 in Resources */ = {isa = PBXBuildFile; fileRef = F72BD4461C02C05400759B76 /* parse-library-1.10.0 */; };
 		F7C6B1B81C03B58F0031C7F5 /* UserHomepageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C6B1B71C03B58F0031C7F5 /* UserHomepageVC.swift */; };
 /* End PBXBuildFile section */
@@ -131,14 +129,12 @@
 		68A764891BB5D9260007B18A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		68A7648B1BB5D9260007B18A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68A7648D1BB5D9260007B18A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68B011F51BF3D93B00D5DA54 /* MainTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTVC.swift; sourceTree = "<group>"; };
 		68B011F91BF3E1FF00D5DA54 /* PhoneCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneCore.swift; sourceTree = "<group>"; };
-		68B011FD1BF6848600D5DA54 /* rollDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rollDetailCell.swift; sourceTree = "<group>"; };
-		68B011FF1BFA73ED00D5DA54 /* RollsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollsTVC.swift; sourceTree = "<group>"; };
 		68D4EE391BFFBABE0003E3B2 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		68D4EE3B1BFFBD310003E3B2 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		6A2052FA65CA45B0CC1BD3C8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C238ECD8D753CC113BFC5B3E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F70E14211C0D5D5300C80229 /* customRollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customRollCell.swift; sourceTree = "<group>"; };
 		F72BD4461C02C05400759B76 /* parse-library-1.10.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "parse-library-1.10.0"; sourceTree = "<group>"; };
 		F7C6B1B71C03B58F0031C7F5 /* UserHomepageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHomepageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -264,11 +260,9 @@
 				68A764671BB5D9260007B18A /* Assets.xcassets */,
 				68A764691BB5D9260007B18A /* LaunchScreen.storyboard */,
 				68A7646C1BB5D9260007B18A /* Info.plist */,
-				68B011F51BF3D93B00D5DA54 /* MainTVC.swift */,
 				68B011F91BF3E1FF00D5DA54 /* PhoneCore.swift */,
-				68B011FD1BF6848600D5DA54 /* rollDetailCell.swift */,
-				68B011FF1BFA73ED00D5DA54 /* RollsTVC.swift */,
 				F7C6B1B71C03B58F0031C7F5 /* UserHomepageVC.swift */,
+				F70E14211C0D5D5300C80229 /* customRollCell.swift */,
 			);
 			path = DiceRoller;
 			sourceTree = "<group>";
@@ -517,14 +511,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68B011F61BF3D93B00D5DA54 /* MainTVC.swift in Sources */,
 				68B011FA1BF3E1FF00D5DA54 /* PhoneCore.swift in Sources */,
 				68D4EE3A1BFFBABE0003E3B2 /* LoginVC.swift in Sources */,
-				68B012001BFA73ED00D5DA54 /* RollsTVC.swift in Sources */,
 				68D4EE3C1BFFBD310003E3B2 /* RegisterVC.swift in Sources */,
+				F70E14221C0D5D5300C80229 /* customRollCell.swift in Sources */,
 				F7C6B1B81C03B58F0031C7F5 /* UserHomepageVC.swift in Sources */,
 				68A764611BB5D9260007B18A /* AppDelegate.swift in Sources */,
-				68B011FE1BF6848600D5DA54 /* rollDetailCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

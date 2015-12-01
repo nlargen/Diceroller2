@@ -10,21 +10,11 @@ import UIKit
 import WatchConnectivity
 import Parse
 
-class MainTVC: UIViewController, WCSessionDelegate, UITableViewDataSource, UITableViewDelegate
+class MainTVC: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
     let defaults = NSUserDefaults.standardUserDefaults()
-    var session : WCSession!
     @IBOutlet weak var tv: UITableView!
     
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject])
-    {
-        PhoneCore.theRowData.append(message["aRoll"] as! String)
-        self.defaults.setObject(PhoneCore.theRowData, forKey: "theRolls")
-        dispatch_async(dispatch_get_main_queue()) { () -> Void in
-            self.tv.reloadData()
-        }
-        
-    }
     
     override func viewDidLoad()
     {
@@ -38,13 +28,9 @@ class MainTVC: UIViewController, WCSessionDelegate, UITableViewDataSource, UITab
             self.defaults.setObject(theRolls, forKey: "theRolls")
         }
         PhoneCore.theRowData = theRolls as! [String]
+       
         
-        if WCSession.isSupported() {
-            self.session = WCSession.defaultSession()
-            session.delegate = self
-            session.activateSession()
-        }
-        
+                
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

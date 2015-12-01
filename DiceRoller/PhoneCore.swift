@@ -7,11 +7,13 @@
 //
 
 import UIKit
-
+import Parse
 class PhoneCore: NSObject
 {
-    static var theRowData : [String]!
+    static var theRowData : [PFObject]!
     static var username = ""
     static var password = ""
     static var userid = ""
+    static var currentUser = ""
+    
 }
